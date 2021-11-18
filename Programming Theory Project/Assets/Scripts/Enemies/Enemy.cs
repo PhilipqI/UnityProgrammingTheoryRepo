@@ -18,6 +18,7 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // ABSTRACTION
         Move();   
     }
 
@@ -39,4 +40,9 @@ public class Enemy : MonoBehaviour
             dirDown = true;
         }
     }
+
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+     //   Debug.Log("from enemy");
+    //}
 }

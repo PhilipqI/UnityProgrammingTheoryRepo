@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 2470858231752016169}
   - component: {fileID: 2470858231752016166}
   - component: {fileID: 2470858231752016168}
+  - component: {fileID: 6820805028304803131}
   m_Layer: 0
   m_Name: Saw
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100,7 +101,6 @@ MonoBehaviour:
   upperPosY: -1
   lowerPosY: -3
   dirDown: 0
-  rigidBody2D: {fileID: 0}
 --- !u!50 &2470858231752016168
 Rigidbody2D:
   serializedVersion: 4
@@ -122,3 +122,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 2
+--- !u!58 &6820805028304803131
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2470858231752016164}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.28
