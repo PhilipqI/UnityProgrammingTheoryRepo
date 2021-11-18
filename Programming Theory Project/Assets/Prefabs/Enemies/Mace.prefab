@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4320649248607995197}
   - component: {fileID: 4320649248607995196}
   - component: {fileID: 4320649248607995199}
-  - component: {fileID: 5504338485079916280}
+  - component: {fileID: 2134286368686603637}
   m_Layer: 0
   m_Name: Mace
   m_TagString: Enemy
@@ -100,8 +100,8 @@ MonoBehaviour:
   upperPosY: 5
   lowerPosY: 0
   dirDown: 1
---- !u!61 &5504338485079916280
-BoxCollider2D:
+--- !u!60 &2134286368686603637
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -123,6 +123,31 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.28, y: 1.28}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.64, y: -0.38}
+      - {x: 0.64, y: -0.25}
+      - {x: 0.57, y: -0.17}
+      - {x: 0.64, y: -0.099999994}
+      - {x: 0.64, y: 0.04}
+      - {x: 0.58, y: 0.12}
+      - {x: 0.64, y: 0.24}
+      - {x: 0.64, y: 0.34}
+      - {x: 0.53999996, y: 0.41}
+      - {x: 0.51, y: 0.62}
+      - {x: 0.44, y: 0.64}
+      - {x: -0.38, y: 0.64}
+      - {x: -0.48999998, y: 0.59999996}
+      - {x: -0.64, y: 0.41}
+      - {x: -0.64, y: 0.26}
+      - {x: -0.57, y: 0.19}
+      - {x: -0.64, y: 0.049999997}
+      - {x: -0.64, y: -0.04}
+      - {x: -0.51, y: -0.099999994}
+      - {x: -0.64, y: -0.25}
+      - {x: -0.64, y: -0.35999998}
+      - {x: -0.39999998, y: -0.64}
+      - {x: -0.26999998, y: -0.64}
+      - {x: -0.13, y: -0.53999996}
+      - {x: -0.03, y: -0.64}
+      - {x: 0.34, y: -0.64}

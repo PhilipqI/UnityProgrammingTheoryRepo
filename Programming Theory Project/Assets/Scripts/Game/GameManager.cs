@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private GameObject gameOverMenu;
+    [SerializeField] private GameObject levelFinishedMenu;
+    
     private bool m_GameIsActive;
 
     // ENCAPSULATION
@@ -44,5 +46,16 @@ public class GameManager : MonoBehaviour
     {
         m_GameIsActive = false;
         gameOverMenu.SetActive(true);
+    }
+
+    public void LevelFinished()
+    {
+        m_GameIsActive = false;
+        levelFinishedMenu.SetActive(true);
+    }
+
+    public void BackToMenu()
+    {
+        SceneManager.LoadScene(Constants.SCENE_MENU);
     }
 }

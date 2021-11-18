@@ -46,7 +46,7 @@ public class PlayerController : MonoBehaviour
         }
         else if (collision.gameObject.CompareTag(Constants.TAG_GOAL))
         {
-            Debug.Log("Finish");
+            gameManager.LevelFinished();
         }
 
     }
